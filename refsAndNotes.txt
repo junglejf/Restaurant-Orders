@@ -1,0 +1,29 @@
+Requisito 1)
+  https://www.geeksforgeeks.org/assigning-multiple-variables-in-one-line-in-python/
+  https://pythonguides.com/python-find-max-value-in-a-dictionary/
+  https://bobbyhadz.com/blog/python-create-set-with-one-element
+  https://www.section.io/engineering-education/files-and-exceptions-in-python/
+
+        maria_favorite_food = max(dict_orders['maria']['food'], key = dict_orders['maria']['food'].get)
+        print('\nQual o prato mais pedido por maria?',maria_favorite_food)
+        print('Quantas vezes arnaldo pediu hamburguer?',dict_orders['arnaldo']['food']['hamburguer'])
+
+        joao_foods = set((dict_orders['joao']['food']).keys())
+        joao_week_day = dict_orders['joao']['week_day']
+        print('Quais pratos joao nunca pediu?', food_list - joao_foods)
+        print('Quais dias joao nunca foi à lanchonete?', open_days - joao_week_day)
+
+        with open('data/mkt_campaign.txt', 'w') as xfile:
+                xfile.write(maria_favorite_food + '\n')
+                xfile.writelines(str(dict_orders['arnaldo']['food']['hamburguer']) + '\n')
+                xfile.write(str(food_list - joao_foods) + '\n')
+                xfile.write(str(open_days - joao_week_day) + '\n')
+
+
+Requisito 2)
+https://pypubsub.readthedocs.io/en/v4.0.3/usage/usage_basic.html
+https://stackoverflow.com/questions/1535327/how-to-print-instances-of-a-class-using-print
+                  o nome da chave max       o valor da chave max
+ print(dishs, max(dishs, key=dishs.get), max(dishs.values()))
+ >>> https://stackoverflow.com/questions/42044090/return-the-maximum-value-from-a-dictionary
+ >>> https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary
